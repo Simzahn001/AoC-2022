@@ -19,8 +19,6 @@ func main() {
 
 	filescanner := bufio.NewScanner(readFile)
 
-	filescanner.Split(bufio.ScanLines)
-
 	counter := 0
 	for filescanner.Scan() {
 		line := filescanner.Text()
